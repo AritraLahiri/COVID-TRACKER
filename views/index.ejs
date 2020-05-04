@@ -1,0 +1,245 @@
+<%- include ("./partials/header") %>
+
+<!-- Header Part -->
+<header>
+	<div class="flex-containerr">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-12  order-lg-1 order-2">
+				<div class="image">
+					<img src="./images/header.png" alt="Header Image" height="623px" width="648px" class="img-fluid">
+				</div>
+
+			</div>
+			<div class="col-lg-6 col-md-6 col-12  order-lg-2 order-1">
+				<div class="header-text ">
+					<h1>COVID-19</h1>
+					<h2>REAL-TIME-UPDATES</h2>
+					<P>Get the live updates of covid-19 cases all around the world and as well as India</P>
+					<button> <a class="header-button" href="#updates">check now</a></button>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+</header>
+
+<!-- Symptoms -->
+<section class="symptoms" id="symptoms">
+	<div class="symtom-header">
+		<h1 class="text-capitalize text-center text-danger">possible symptoms</h1>
+		<p class="desc">Victims of COVID-19 may encounter these Symptoms</p>
+	</div>
+
+	<div class="row container-fluid">
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/running.png" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Runny Nose</h5>
+					<p class="card-text">Patients may experience sort of runny nose .</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12 text-center">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/cough.png" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Dry Coughs</h5>
+					<p class="card-text">Patients may experience some cough and cold .Its the early stage.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/tired.png" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Tiredness</h5>
+					<p class="card-text">Patients may experience fatique or a feeling of tiredness in their body .</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row my-5 container-fluid">
+		<div class="col-lg-4 col-md-4 col-12 ">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/fever.png" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Fever</h5>
+					<p class="card-text">Patients may experience fever or high rise in temperature.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12 text-center">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/breath-prob.png" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Breathing Problems</h5>
+					<p class="card-text">Patients may experience problem breathing in and must seek imediate help .</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 text-center">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="images/throat.jpg" alt="Card image cap" class="img-fluid">
+				<div class="card-body">
+					<h5 class="card-title">Sore Throat</h5>
+					<p class="card-text">Patients may experience problem in the thraot and acute pain may aris in the
+						throat region.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- INDIA SUMMARY AT A GLANCE -->
+
+<section class="summary">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-12">
+			<img src="images/indiasummary.png" alt="india-reports image" class="img-fluid" width=540px height=765px>
+		</div>
+		<div class="col-lg-6 col-md-6 col-12">
+			<h1 class="right-title">India reports are severe</h1>
+			<h2 class="right-subtitle">Maharahstra cases are more severe than ever</h2>
+			<p class="gist">The cases around India are increasing daily
+				All the states are affected with the deadly virus.
+				The prime Minister declared a lockdown
+				to stop the cases . the country is staying
+				at their home and working remotely. </p>
+			<div class="row states_glance">
+				<div class="col-lg-6 col-md-6 col-12 ">
+					<h1 class="numbers count"><%=updates.statewise[9].confirmed%></h1>
+					<h5 class="state">West Bengal</h5>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1 class="numbers count"><%=updates.statewise[0].confirmed%> </h1>
+					<h5 class="state">MAHARASHTRA</h5>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1 class="numbers count"><%=updates.statewise[1].confirmed %></h1>
+					<h5 class="state">GUJARAT</h5>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1 class="numbers count"><%=updates.statewise[2].confirmed %> </h1>
+					<h5 class="state">DELHI</h5>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- LIVE UPDATES OF VIRUS -->
+<section class="live-updates container" id="updates">
+	<div class="header">
+		<h1>INDIA IN CRISIS</h1>
+		<p>A huge population in india is affected already</p>
+	</div>
+	<div class="row updates-glance">
+		<div class="col-lg-4 col-md-4 col-12">
+			<h3 class="conf">Confirmed</h3>
+			<h1 class="conf"><%=updates.cases_time_series[length].totalconfirmed %></h1>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<h3 class="recovered">Recovered</h3>
+			<h1 class="recovered"><%=updates.cases_time_series[length].totalrecovered %></h1>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12">
+			<h3 class="dead">Deceased</h3>
+			<h1 class="dead "><%=updates.cases_time_series[length].dailydeceased %></h1>
+		</div>
+	</div>
+
+	<div class="table table-responsive">
+		<table class="table-bordered table-striped text-center" id="table-val">
+			<tr>
+				<th>State</th>
+				<th>Active</th>
+				<th>Confirmed</th>
+				<th>Recovered</th>
+				<th>Deceased</th>
+			</tr>
+			<% updates.statewise.forEach(updates=>{ %>
+			<tr>
+				<td><%= updates.state%></td>
+				<td class="count"><%= updates.active%></td>
+				<td class="count"><%= updates.confirmed%></td>
+				<td class="count"><%= updates.recovered%></td>
+				<td class="count"><%= updates.deaths%></td>
+			</tr>
+
+			<% })%>
+		</table>
+	</div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section class="contact container" id="contact">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-12">
+			<div class="image">
+				<img src="images/contact.png" alt="contact-image" class="img-fluid" width=274px height=803px>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-12">
+			<h1 class="contact-header">Contact Now</h1>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-12">
+					<form method="POST" action="/sickpeople">
+						<label for="">FIRST NAME</label>
+						<input type="text" placeholder="ROHAN" required name="patientFirstName">
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<label for="">LAST NAME</label>
+					<input type="text" placeholder="DAS" required name="patientLastName">
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<label for="">MOBILE</label>
+					<input type="text" placeholder="XXXXX" required name="mobile">
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<label for="">EMAIL</label>
+					<input type="email" placeholder="xyz@mail.com" required name="email">
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<label for="">Condition</label>
+					<textarea name="patientCondition" cols="30" rows="10" placeholder="Patient Condition"></textarea>
+					<button class="Send" type="submit">Send</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include ("./partials/footer") %>

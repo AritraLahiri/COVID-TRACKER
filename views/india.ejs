@@ -1,0 +1,30 @@
+<%- include('./partials/header')%>
+<section class="indialive container-fluid">
+    <div class="mb-5">
+        <h3 class="text-center my-5 text-uppercase text-danger display-3">COVID LIVE UPDATES OF INDIA</h3>
+    </div>
+    <div class="row">
+        <% updates.forEach(updates=>{ %>
+        <div class="col-lg-4 col-md-4 col-12 my-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-success state"><%=updates.state %></h5>
+                    <h6 class=" mb-2 text-muted"><%=updates.lastupdatedtime %></h6>
+                    <div class="table-responsive">
+                        <h6 class="card-title mb-2 ">Confirmed</h6>
+                        <h6 class="card-subtitle mb-2 text-muted count"><%=updates.confirmed %> </h6>
+                        <h6 class="card-title mb-2 ">Active</h6>
+                        <h6 class="card-subtitle mb-2 text-muted count"><%=updates.active%> </h6>
+                        <h6 class="card-title mb-2 ">Deaths</h6>
+                        <h6 class="card-subtitle mb-2 text-muted count"><%=updates.deaths%> </h6>
+                        <h6 class="card-title mb-2 ">Recovered</h6>
+                        <h6 class="card-subtitle mb-2 text-muted count"><%=updates.recovered %> </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</section>
+
+<!-- <%- include('./partials/footer')%> -->
