@@ -5,11 +5,12 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const request = require('request');
 
-mongoose.connect(process.env.URL, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useFindAndModify: false
-});
+// mongoose.connect(process.env.URL, {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true,
+// 	useFindAndModify: false
+// });
+console.log(typeof process.env.URL);
 //
 
 //configs
