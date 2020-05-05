@@ -5,11 +5,14 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const request = require('request');
 
-// mongoose.connect(process.env.URL, {
-// 	useNewUrlParser: true,
-// 	useUnifiedTopology: true,
-// 	useFindAndModify: false
-// });
+mongoose.connect(
+	'mongodb+srv://aritra:GSf6li1FuXTev75y@cluster0-3ts3r.mongodb.net/covidPatients?retryWrites=true&w=majority',
+	{
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useFindAndModify: false
+	}
+);
 console.log(typeof process.env.URL);
 //
 
