@@ -7,7 +7,8 @@ const request = require('request');
 
 mongoose.connect(process.env.URL, {
 	useNewUrlParser: true,
-	useUnifiedTopology: true
+	useUnifiedTopology: true,
+	useFindAndModify: false
 });
 //
 
