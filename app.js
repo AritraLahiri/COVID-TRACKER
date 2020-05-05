@@ -83,6 +83,4 @@ app.get('*', (req, res) => {
 });
 
 // SERVER CODE
-app.listen(3000, () => {
-	console.log('Server is Listening');
-});
+app.listen(process.env.PORT || 3000);
