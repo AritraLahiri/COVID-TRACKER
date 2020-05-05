@@ -117,19 +117,19 @@
 				at their home and working remotely. </p>
 			<div class="row states_glance">
 				<div class="col-lg-6 col-md-6 col-12 ">
-					<h1 class="numbers count"><%=updates.statewise[9].confirmed%></h1>
+					<h1 class="numbers"><%=updates.statewise[9].confirmed%></h1>
 					<h5 class="state">West Bengal</h5>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12">
-					<h1 class="numbers count"><%=updates.statewise[0].confirmed%> </h1>
+					<h1 class="numbers"><%=updates.statewise[0].confirmed%> </h1>
 					<h5 class="state">MAHARASHTRA</h5>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12">
-					<h1 class="numbers count"><%=updates.statewise[1].confirmed %></h1>
+					<h1 class="numbers"><%=updates.statewise[1].confirmed %></h1>
 					<h5 class="state">GUJARAT</h5>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12">
-					<h1 class="numbers count"><%=updates.statewise[2].confirmed %> </h1>
+					<h1 class="numbers"><%=updates.statewise[2].confirmed %> </h1>
 					<h5 class="state">DELHI</h5>
 				</div>
 			</div>
@@ -172,10 +172,10 @@
 			<% updates.statewise.forEach(updates=>{ %>
 			<tr>
 				<td><%= updates.state%></td>
-				<td class="count"><%= updates.active%></td>
-				<td class="count"><%= updates.confirmed%></td>
-				<td class="count"><%= updates.recovered%></td>
-				<td class="count"><%= updates.deaths%></td>
+				<td><%= updates.active%></td>
+				<td><%= updates.confirmed%></td>
+				<td><%= updates.recovered%></td>
+				<td><%= updates.deaths%></td>
 			</tr>
 
 			<% })%>
